@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i Show</title><link rel="icon" href="log/Untitled design (2).png">
+
+    <style>
+        /* ===== MOBILE FIX ===== */
+
+/* ibintu byose bibe responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* irinde width nini nka cm */
+input, button {
+  width: 100%;
+}
+
+.search input {
+  width: 100%;
+}
+
+/* body ntifungwe nabi kuri phone */
+body {
+  min-height: 100vh;
+  padding: 10px;
+}
+
+@media (max-width: 500px) {
+  .login-card {
+    padding: 20px;
+  }
+body {
+  font-size: 18px;
+}
+
+@media (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+}
+  body {
+    align-items: flex-start;
+  }
+}
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        
+
+  body {
+    position: relative;
+    background: url('log/Untitled design (6).png') center/cover no-repeat;
+    opacity: 1;
+}
+
+body::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+        .login-card {
+            background: #172a35;
+            padding: 40px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        /* Agasanduku bandikiramo */
+        .input-group input {
+            width: 100%;
+            padding: 15px 10px;
+            background: transparent;
+            border: 1px solid #4a606b;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            outline: none;
+            transition: 0.3s ease;
+        }
+
+        /* Iri jambo naryo rirahinduka iyo ukanzeho */
+        .input-group label {
+            position:absolute;
+            left: 10px;
+            top: 15px;
+            color: #88a0ab;
+            pointer-events: none;
+            transition:0.9s ease all;
+            background-color: #172a35; /* Kugira ngo bitayivanga n'umurongo */
+            padding: 0 5px;
+        }
+
+        /* AKAZI NYAMUKURU: Kuzamura label */
+        /* Iyo ukanze mu gasanduku (:focus) cyangwa harimo inyuguti (!placeholder-shown) */
+        .input-group input:focus ~ label,
+        .input-group input:not(:placeholder-shown) ~ label {
+            top: -10px;
+            left: 8px;
+            font-size: 10px;
+            color: #32e6e2; /* Ibara rya Cyan */
+        }
+
+        .input-group input:focus {
+            border-color: #32e6e2;
+        }
+
+        .btn-login {
+            width: 100%;
+            padding: 14px;
+            background-color: #32e6e2;
+            border: none;
+            border-radius: 5px;
+            color: #0e1e25;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.2s;
+    
+        }
+
+        .btn-login:hover {
+            background-color: #02b3b0;
+            transform: translateY(-1px);
+        }
+
+        .footer-text {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #88a0ab;
+        }
+
+        .footer-text a {
+            color: #32e6e2;
+            text-decoration: none;
+            font-size: 17px;
+        }
+    .ishow img{
+    width: 4cm;
+    border-radius: 3vh;
+    margin: 1px;
+    }
+.ishow{
+    box-shadow: 0 2px 4px 2px rgb(117, 117, 117);
+    padding: 10px;
+    background-color:  rgb(147, 147, 147);
+    border-radius: 3vh;
+    margin-top: 3cm;
+    margin:4cm;
+    margin-right: 4cm;
+    }
+.diii{
+    text-decoration: none;
+    color:black;
+    font-size: 36px;
+}
+.diii:hover{
+color: rgb(246, 255, 0);
+}
+b{
+    margin-top: -12cm;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+
+    </style>
+</head><b>Login page</b>
+Back
+<body><a href="main.html" class="diii">⬅</a>
+<div class="ishow">
+<img src="log/2.png" alt="log of i Show">
+    <img src="log/Untitled design (2).png" alt="log of i Show"><br>
+    <img src="log/Untitled design.png" alt="log of i Show">
+    <img src="log/i.png" alt="log of i Show">
+</div>
+
+    <div class="login-card">
+        <h2>Fill In Field.</h2>
+        
+        <form action="https://formspree.io/f/xaqvnrrk" method="post">
+<div class="input-group">
+                <input type="text" id="text" placeholder=" " required>
+                <label for="text">User name</label>
+            </div>
+
+
+            <div class="input-group">
+                <input type="email" id="email" placeholder=" " required>
+                <label for="email">Email address</label>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" placeholder=" " required>
+                <label for="password">Password</label>
+            </div>
+
+            <button type="submit" class="btn-login">Log In</button>
+        </form>
+
+        <p class="footer-text">Don't have an account <a href="sign up.html">Sign Up</a></p>
+    </div>
+
+</body>
+</html>

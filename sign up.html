@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i Show</title><link rel="icon" href="log/Untitled design (2).png">
+
+    <style>
+/* ===== MOBILE FIX ===== */
+
+/* ibintu byose bibe responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* irinde width nini nka cm */
+input, button {
+  width: 100%;
+}
+
+/* fix search input yawe */
+.search input {
+  width: 100%;
+}
+
+/* body ntifungwe nabi kuri phone */
+body {
+  min-height: 100vh;
+  padding: 10px;
+}
+body {
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+/* mobile adjustments */
+@media (max-width: 600px) {
+  .login-card {
+    padding: 20px;
+  }
+
+  body {
+    align-items: flex-start;
+  }
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+  body {
+    position: relative;
+    height:312cm;
+    background: url('log/21.png') center/cover no-repeat;
+}
+
+body::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+
+        .login-card {
+            background: #172a35;
+            padding: 40px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            width: 100%;
+            max-width: 400px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        /* Agasanduku bandikiramo */
+        .input-group input {
+            width: 100%;
+            padding: 15px 10px;
+            background: transparent;
+            border: 1px solid #4a606b;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            outline: none;
+            transition: 0.3s ease;
+        }
+
+        /* Iri jambo naryo rirahinduka iyo ukanzeho */
+        .input-group label {
+            position:absolute;
+            left: 10px;
+            top: 15px;
+            color: #88a0ab;
+            pointer-events: none;
+            transition:0.9s ease all;
+            background-color: #172a35; /* Kugira ngo bitayivanga n'umurongo */
+            padding: 0 5px;
+        }
+
+        /* AKAZI NYAMUKURU: Kuzamura label */
+        /* Iyo ukanze mu gasanduku (:focus) cyangwa harimo inyuguti (!placeholder-shown) */
+        .input-group input:focus ~ label,
+        .input-group input:not(:placeholder-shown) ~ label {
+            top: -12px;
+            left: 8px;
+            font-size: 10px;
+            color: #32e6e2; /* Ibara rya Cyan */
+        }
+
+        .input-group input:focus {
+            border-color: #32e6e2;
+        }
+
+        .btn-login {
+            width: 100%;
+            padding: 14px;
+            background-color: #32e6e2;
+            border: none;
+            border-radius: 5px;
+            color: #0e1e25;
+            font-weight: bold;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.2s;
+    
+        }
+
+        .btn-login:hover {
+            background-color: #2bcbc8;
+            transform: translateY(-1px);
+        }
+
+        .footer-text {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #88a0ab;
+        }
+
+        .footer-text a {
+            color: #32e6e2;
+            font-size: 17px;
+        }
+    .ishow img{
+    width: 4cm;
+    border-radius: 3vh;
+    }
+.ishow{
+    box-shadow: 0 2px 4px 2px rgb(117, 117, 117);
+    padding: 10px;
+    background-color:  rgb(147, 147, 147);
+    border-radius: 3vh;
+    margin-top: 3cm;
+    margin: 4.6cm;
+    }
+.diii{
+    text-decoration: none;
+    color:white;
+    font-size: 36px;
+    margin-right: 1cm;
+}
+.diii:hover{
+color: blue;
+}
+b{
+    margin-top: -12cm;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 25px;
+    color:rgb(0, 0, 0);
+}
+hr{
+    color: red;
+}
+
+    </style>
+</head><b>Sign Up page</b>
+Back
+<body><a href="main.html" class="diii">⬅</a>
+
+<div class="ishow">
+
+    <img src="log/2.png" alt="log of i Show">
+    <img src="log/Untitled design (2).png" alt="log of i Show">
+    <img src="log/Untitled design.png" alt="log of i Show">
+    <img src="log/i.png" alt="log of i Show">
+
+</div>
+
+    <div class="login-card">
+        <h2>SIGN UP</h2>
+        
+        <form action="https://formspree.io/f/xpqbqazp" method="post">
+<div class="input-group">
+                <input type="text" id="text" placeholder=" " required>
+                <label for="text">Full name</label>
+            </div>
+
+<div class="input-group">
+                <input type="text" id="text" placeholder=" " required>
+                <label for="text">User Name</label>
+            </div>
+
+
+            <div class="input-group">
+                <input type="email" id="email" placeholder=" " required>
+                <label for="email">Email address</label>
+            </div>
+
+            <div class="input-group">
+                <input type="date" id="email" placeholder=" " required>
+                <label for="email">Date of Birth</label>
+            </div>
+
+
+<div class="input-group">
+                <input type="text" id="text" placeholder=" " required>
+                <label for="text">Your Gender('Male','Female')</label>
+            </div>
+
+
+
+
+            <button type="submit" class="btn-login">CONTINUE</button>
+        </form>
+
+        <p class="footer-text">Don't want This Page <a href="main.html">Skip</a></p>
+    </div>
+
+</body>
+</html>

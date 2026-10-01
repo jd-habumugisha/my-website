@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i Show</title><link rel="icon" href="log/2.png"><link rel="stylesheet" href="submit.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+     <div class="content">
+<div class="container">
+    <div class="steps-header">
+        <div class="step-circle active" id="dot1">1</div>
+        <div class="step-circle" id="dot2">2</div>
+    </div>
+     <form id="myForm">
+        <div class="form-step active" id="step1">
+            <h2>Information About You , Here Is Needed</h2>
+            <p>Fill out This field To continue.</p>
+            
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" id="fullname" placeholder="Example: Keza Alice" required>
+            </div>
+            
+            <div class="input-group">
+                <label>E-mail</label>
+                <input type="email" id="email" placeholder="name@gmail.com" required>
+            </div>
+
+            <button type="button" onclick="goToStep(2)">Next Info</button>
+        </div>
+
+        <div class="form-step" id="step2">
+            <h2>Message </h2>
+            <p>What you Thing In Brief.</p>
+            
+            <div class="input-group">
+                <label>Subject</label>
+                <input type="text" id="subject" placeholder="Title Of Message">
+            </div>
+            
+            <div class="input-group">
+                <label>Your Message</label>
+                <textarea id="message" rows="4" placeholder="Type here..."></textarea>
+            </div>
+
+            <div class="btn-box">
+                <button type="button" class="btn-back" onclick="goToStep(1)">Go back</button>
+                <button type="submit">Send</button>
+            </div>
+        </div>
+    </form>
+
+    <div id="success-msg">
+        <div class="success-icon">✓</div>
+        <h2>Successfull !!</h2>
+        <p>Thanks for your Information.wait for 30 min To get Response.</p>
+        <button onclick="location.reload()">Get start Again</button>
+    </div>
+</div></div>
+<script src="jd.js"></script>
+</body>
+</html>
